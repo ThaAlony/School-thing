@@ -63,4 +63,7 @@ public abstract class Persona {
         return null;
     }
     
+    public double getCosto() {
+        return 0;
+    }
 }
