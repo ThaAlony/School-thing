@@ -9,18 +9,17 @@
  * @author ddant
  */
 public class Senior extends Funzionari{
-    private int oreLavorativa;
     private int costo;
-
-    public Senior(int oreLavorativa, int costo, int codice, int annoInizio, int oreLavorate, String nome, String cognome, int anno) {
-        super(codice, annoInizio, oreLavorate, nome, cognome, anno);
-        this.oreLavorativa = oreLavorativa;
+    
+    //80 ora 
+    public Senior(int costo, int annoInizio, int oreLavorate, String nome, String cognome, int anno) {
+        super(annoInizio, oreLavorate, nome, cognome, anno);
         this.costo = costo;
     }
 
-    /*public int getCosto() {
+    public int getCostoC() {
         return costo;
-    }*/
+    }
     
     @Override
     public Persona clone() {
