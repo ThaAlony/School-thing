@@ -3,11 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package it.edu.isspitagora.esercizio;
 
 /**
  *
- * @author alony
+ * @author ddant
  */
 public abstract class Persona {
     
@@ -58,12 +57,13 @@ public abstract class Persona {
         this.anno = anno;
     }
     
+    public double getCosto() {
+        return 0;
+    }
+    
     @Override
     public Persona clone() {
         return null;
     }
     
-    public double getCosto() {
-        return 0;
-    }
 }
